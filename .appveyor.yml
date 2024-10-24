@@ -62,4 +62,4 @@ for:
 
     artifacts:
       - path: build.zip
-      - name: Build
+        name: Build
