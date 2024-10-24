@@ -56,3 +56,10 @@ for:
     build_script:
       - cd %APPVEYOR_BUILD_FOLDER%
       - '%make%'
+      
+    after_build:
+      - 7z a build.zip %APPVEYOR_BUILD_FOLDER%\*
+
+    artifacts:
+      - path: build.zip
+      - name: Build
