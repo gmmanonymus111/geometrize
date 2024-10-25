@@ -58,7 +58,7 @@ for:
       - '%make%'
       
     after_build:
-      - 7z a build.zip %APPVEYOR_BUILD_FOLDER%\*
+      - 7z a build.zip %APPVEYOR_BUILD_FOLDER%\release\*
 
     artifacts:
       - path: build.zip
